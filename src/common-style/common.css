@@ -1,0 +1,74 @@
+:root {
+    --gold-color: #bb8e34;
+    --grayWhite-color: #C9CCCF;
+    --gray-color: #666666;
+    --white-color: #fafafa;
+
+    --content-center: 0 auto;
+    --padding-desktop:0 0.9375rem 0  0.9375rem;
+    --max-width-container-desktop: 80rem;
+
+    --max-width-container-mobile: 23.4375rem;
+    --padding-mobile: 1rem;
+}
+
+.container {
+    margin: 0 auto;
+   
+    width: 100%;
+    max-width: var(--max-width-container-desktop);
+}
+
+html {
+    font-size: 16px;
+    color: var(--white-color);
+    font-family: "PT Sans Narrow";
+    font-weight: 400;
+    letter-spacing: 0.008em;
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 1.11;
+    color: var(--gold-color);
+}
+
+h2 {
+    font-size: 1.375rem;
+    line-height: 1.37;
+    font-weight: 400;
+
+
+}
+
+h5 {
+    font-size: 0.875rem;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.14;
+
+}
+
+strong {
+    font-weight: 700;
+}
+
+b {
+    font-weight: 700;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 0.75;
+}
+
+@media (width < 1024px) {
+
+    .container {
+        margin: 0 auto;
+        padding: var(--padding-mobile);
+        width: 100%;
+        max-width: var(--max-width-container-mobile);
+    }
+}

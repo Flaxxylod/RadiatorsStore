@@ -1,0 +1,44 @@
+.Nav-content {
+    background: url("./../../assets/Landing/Header/Header-background.png/");
+}
+
+.nav-links {
+    display: flex;
+}
+
+.burger {
+    display: none;
+}
+
+
+
+
+
+.nav-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 1fr));
+    grid-template-rows: repeat(2, minmax(auto, 1fr));
+    align-items: center;
+    gap: 0 15.44%;
+    color: var(--white-color);
+
+}
+
+@media (width < 1024px) {
+    .nav-links {
+        display: none;
+    }
+
+    .burger {
+        display: grid;
+        justify-items: end;
+        grid-template-columns: 11.375rem 1fr;
+    }
+
+    .nav-grid {
+        padding-left: 0;
+        padding-right: 0;
+        grid-template-columns: repeat(1, minmax(auto, 1fr));
+    }
+}

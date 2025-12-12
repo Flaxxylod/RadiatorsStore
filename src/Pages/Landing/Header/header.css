@@ -1,0 +1,6 @@
+.Header-content {
+    margin: 0 auto;
+    width: 100%;
+    max-width: var(--max-width-desktop);
+    background: url("./../../../assets/Landing/Header/Header-heroBackground.png");
+}
